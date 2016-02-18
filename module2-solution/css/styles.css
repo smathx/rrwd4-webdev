@@ -1,0 +1,115 @@
+/* Use Google fonts if available. */
+
+body {
+  font-family: 'Open Sans', Helvetica, sans-serif;
+}
+
+/*TODO: Does not work for <body> tag ???? */
+/* Set box sizing realtive to border. */
+
+div {
+  box-sizing: border-box;
+}
+
+/* Page heading is centered, bold, 75% bigger, with some space beneath it. */
+
+.page-heading {
+  font-size: 1.75em;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* 
+  Tiles are used to split rows in the right proportion. Sections are
+  defined within them.
+*/
+
+.tile {
+  float: left;
+}
+
+/* 
+  Section height is set to 200px to give about six lines of text. The width
+  varies with the browser width.
+*/
+.section {
+  position: relative;
+  height: 200px;
+  margin: 20px;
+  border: 1px black solid;
+  background-color: #999999;
+}
+
+/*
+  Text is formatted into a div 20 px shorter than section to ensure padding
+  at the bottom edge is preserved when the text overflows. Padding is set 
+  at the top edge to make room for the section title.
+*/
+.section-text {
+  height: 180px;
+  padding: 2.8em 20px 0 20px;
+  overflow: hidden;
+}
+
+/* 
+  The section title is set to 40% of the section width and anchored to the
+  top right corner. Text is 25% bigger and center aligned. A border is set 
+  only on the left and bottom edge to avoid a thick top and right edge. 
+*/
+.section-title {
+  position: absolute;  
+  top: 0;
+  right: 0;
+  text-align: center;
+  font-size: 1.25em;
+  font-weight: bold;
+  padding: 3px 50px 3px;
+  border-left: 1px black solid;
+  border-bottom: 1px black solid;
+}
+
+/* Section title colours. */
+
+.pink {
+  background-color: #D59898;
+}
+
+.brown {
+  color: white;
+  background-color: #C14543;
+}
+
+.gold {
+  background-color: #E5D198;
+}
+
+/*---- Desktop Styles ----*/
+
+@media (min-width: 992px) {
+  .tile {
+    width: 33.33%;
+  }
+}
+
+/*---- Tablet Styles ----*/
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .tile {
+    width: 50%;
+  }
+  
+  .tile-tablet-full-width {
+    width: 100%;
+  }
+}
+
+/*---- Mobile Styles ----*/
+
+@media (max-width: 767px) {
+  .tile {
+    width: 100%;
+  }
+}
+
+/*end*/
