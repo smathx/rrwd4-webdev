@@ -4,14 +4,17 @@ body {
   font-family: 'Open Sans', Helvetica, sans-serif;
 }
 
-/*TODO: Does not work for <body> tag ???? */
-/* Set box sizing realtive to border. */
+/*TODO: Does not work for <body> tag? */
+/* Set box sizing relative to border. */
 
 div {
   box-sizing: border-box;
 }
 
-/* Page heading is centered, bold, 75% bigger, with some space beneath it. */
+/* 
+  Page heading is centred, bold, and 75% bigger.The space beneath it
+  is squeezed out as the screen width shrinks. 
+*/
 
 .page-heading {
   font-size: 1.75em;
@@ -53,9 +56,9 @@ div {
 }
 
 /* 
-  The section title is set to 40% of the section width and anchored to the
-  top right corner. Text is 25% bigger and center aligned. A border is set 
-  only on the left and bottom edge to avoid a thick top and right edge. 
+  The section title is anchored to the top right corner. Text is 25% bigger 
+  and center aligned. A border is set only on the left and bottom edge to 
+  avoid a thick top and right edge. 
 */
 .section-title {
   position: absolute;  
@@ -102,6 +105,10 @@ div {
   .tile-tablet-full-width {
     width: 100%;
   }
+  
+  .page-heading {
+    margin-bottom: 20px;
+  }
 }
 
 /*---- Mobile Styles ----*/
@@ -109,6 +116,10 @@ div {
 @media (max-width: 767px) {
   .tile {
     width: 100%;
+  }
+  
+  .page-heading {
+    margin-bottom: 0px;
   }
 }
 
