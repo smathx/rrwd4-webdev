@@ -1,0 +1,56 @@
+/* CSS for Module 3 assignment */
+
+/* Use Google fonts if availible, set background to aliceblue */
+
+body {
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  background-color: #F0F8FF;
+}
+
+/* Put a bit more space under the main heading. */
+
+h2 {
+  margin-bottom: 25px;
+}
+
+/* 
+  Set large size on main block to trigger scrolling. Add a margin around the
+  sides and padding inside. Set background colour to powderblue. 
+*/
+.big-block {
+  height: 1200px;
+  margin-top: 10px;
+  
+  /* TODO: There is a big difference between 0px and 1px top padding. */ 
+  padding: 1px 20px;
+  background-color: #B0E0E6;
+}
+
+/* Set navbar background colour to cornflowerblue. */
+
+.navbar-default .container-fluid {
+  background-color: #6495ED;
+}
+
+/* Make the brand name more prominent. */
+
+.navbar-default .navbar-brand {
+  color: black;
+  font-size: 150%;
+  font-weight: bolder;
+}
+
+/* 
+  When the view is 'xs' make the menu more prominent and set background 
+  colour to lightskyblue.
+*/
+
+@media (max-width: 767px) {
+  .navbar-collapse {
+    background-color: #87CEFA;
+    font-size: 120%;
+    font-weight: bolder;
+  }
+}
+
+/*end*/
